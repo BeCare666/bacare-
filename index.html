@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>BeCare</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/WhatsApp Image 2023-07-17 at 18.35.05.jpeg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.min.css">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><img src="assets/img/WhatsApp Image 2023-07-17 at 18.35.05.jpeg" 
+      style="width: 7vh; height: 10vh;"
+      alt=""> <a href="index.html">Be<span style="margin-left: 0 !important;">Car</span><span>e</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="#about">À propos</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Nos Réalisations</a></li>
+          <li><a class="nav-link scrollto" href="#team">Équipe</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a style="cursor: pointer; color: white !important;" class="get-started-btn scrollto" id="myidpayer" data-toggle="modal" data-target="#exampleModal">Payer</a>
+    </div>
+  </header><!-- End Header -->
+  <div style="background-color: rgb(21, 20, 46) !important" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="background-color: rgb(47, 45, 104) !important">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="color: white !important;">Commande de site web</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label"  style="color: white !important;">Metter le prix</label>
+              <input type="text" class="form-control" id="recipient-name" oninput="validerSaisie(this)">
+              <label for="nom_du_site" class="col-form-label"  style="color: white !important;">Le nom du site ou de l'application</label>
+              <input type="text" class="form-control" id="nom_du_site">
+              <label for="nom_du_site" class="col-form-label"  style="color: white !important;">Le type du site</label>
+              <select type="text" class="form-control" id="type_du_site">
+                <option value="Web">Web</option>
+                <option value="Web">Web et mobile</option>
+                <option value="Web">Mobile</option>
+              </select>
+            </div>
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary" id="sendunityforuser"  data-dismiss="modal">Valider</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <div class="col-xl-6">
+          <h1>Une meilleure expérience numérique avec BeCare</h1>
+          <h2>Nous sommes une équipe de designers talentueux qui créent des sites web.</h2>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2QbgzyDHfOijIx4j8wWInPNk6ErXeBWeVl6V-9ffu0XnKxQ/viewform?usp=pp_url" class="btn-get-started scrollto">Commandez votre site</a>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients" style="display: none !important;">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch">
+            <div class="content">
+              <h3>À propos de nous BeCare</h3>
+              <p>
+                Nous sommes une équipe de designers talentueux, passionnés et créatifs, spécialisés dans la conception et le développement de sites web et d'applications interactives. Notre objectif est de fournir des solutions numériques innovantes et efficaces pour aider les entreprises et les particuliers à atteindre leurs objectifs en ligne.
+              </p>
+              <a href="#" class="about-btn"><span>À propos</span> <i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Conception web</h4>
+                  <p> Nous sommes experts en conception de maquettes et en création de designs attrayants, en accord avec les meilleures pratiques d'ergonomie et d'expérience utilisateur (UX).</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Développement front-end </h4>
+                  <p>Maîtrisant les langages HTML, CSS et JavaScript, nous transformons les conceptions en sites web interactifs, optimisés pour une navigation fluide et intuitive.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-images"></i>
+                  <h4>Développement back-end</h4>
+                  <p>Nous avons une solide expérience dans la création de fonctionnalités côté serveur en utilisant des langages tels que PHP et Python ou Firebase, ainsi que la gestion de bases de données.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <h4>Intégration d'API et de services tiers</h4>
+                  <p>Nous sommes capables d'intégrer des API et des services externes pour étendre les fonctionnalités des sites web et des applications.</p>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Clients satisfaits</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10203" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Heures de support</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Travailleurs assidus</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Tabs Section ======= -->
+    <section id="tabs" class="tabs" style="display: none !important;">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="ri-gps-line"></i>
+              <h4 class="d-none d-lg-block">Modi sit est dela pireda nest</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <i class="ri-body-scan-line"></i>
+              <h4 class="d-none d-lg-block">Unde praesenti mara setra le</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <i class="ri-sun-line"></i>
+              <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Nostrum qui dile node</h4>
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                </ul>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="ri-check-double-line"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/tabs-2.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda</h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="ri-check-double-line"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                </ul>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/tabs-3.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum</h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/tabs-4.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Tabs Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg ">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-pencil"></i>
+              <h4><a href="#">Conception de sites web</a></h4>
+              <p>Création de maquettes et de designs pour les sites web, en prenant en compte l'ergonomie, l'expérience utilisateur et la convivialité.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-code-slash"></i>
+              <h4><a href="#">Développement front-end</a></h4>
+              <p>Codage et mise en œuvre des éléments visibles du site web, tels que la mise en page, les graphiques, les formulaires et les interactions utilisateur à l'aide de langages comme HTML, CSS, JavaScript, Bootstrap et React JS.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-database"></i>
+              <h4><a href="#">Développement back-end</a></h4>
+              <p>Création et gestion des fonctionnalités côté serveur du site web, notamment la gestion des bases de données, le traitement des formulaires et la logique de l'application, à l'aide de langages comme PHP, Python, Ruby, Java, Firebase etc.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-binoculars"></i>
+              <h4><a href="#">Intégration de systèmes et d'API</a></h4>
+              <p>Intégration de services tiers, de plug-ins ou d'API pour étendre les fonctionnalités d'un site web ou d'une application.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-brightness-high"></i>
+              <h4><a href="#">Optimisation des performances</a></h4>
+              <p>Amélioration des performances d'un site web en optimisant le chargement des pages, la vitesse de navigation et la gestion des ressources.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
+              <i class="bi bi-tools"></i>
+              <h4><a href="#">Maintenance et support</a></h4>
+              <p>Fourniture de services de maintenance, de sauvegarde et de support technique pour assurer le bon fonctionnement continu du site web ou de l'application.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
+              <i class="bi bi-cart4"></i>
+              <h4><a href="#">Solutions e-commerce </a></h4>
+              <p>Mise en place de sites de commerce électronique permettant de vendre des produits ou des services en ligne.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
+              <i class="bi bi-server"></i>
+              <h4><a href="#">Solutions d'hébergement et de déploiement</a></h4>
+              <p>Aide à l'hébergement et au déploiement de sites web sur des serveurs appropriés.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Nos Réalisations</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100" style="display: none;">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ili0.png" class="img-fluid" alt="" style="height: 36vh;">
+              <div class="portfolio-info">
+                <h4>illicolove.com</h4>
+                <p>illicolove.com</p>
+                <div class="portfolio-links">
+                 <!---<a href="assets/img/portfolio/illi1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>---> 
+                  <a href="https://illicolove.com" title="More Details"> <button class="btn btn-danger">Visitez le site</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/boutiquez.png" class="img-fluid" alt="" style="height: 36vh;">
+              <div class="portfolio-info">
+                <h4>boutiquez</h4>
+                <p>boutiquez</p>
+                <div class="portfolio-links">
+                 <!---<a href="assets/img/portfolio/illi1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>---> 
+                  <a href="https://boutiquez.com" title="More Details"> <button class="btn btn-danger">Visitez le site</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/edoto.png" class="img-fluid" alt="" style="height: 36vh;">
+              <div class="portfolio-info">
+                <h4>edotofamily</h4>
+                <p>edotofamily</p>
+                <div class="portfolio-links">
+                 <!---<a href="assets/img/portfolio/illi1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>---> 
+                  <a href="https://edotofamily.netlify.app/" title="More Details"> <button class="btn btn-danger">Visitez le site</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/traducto.png" class="img-fluid" alt="" style="height: 36vh;">
+              <div class="portfolio-info">
+                <h4>traducto</h4>
+                <p>traducto</p>
+                <div class="portfolio-links">
+                 <!---<a href="assets/img/portfolio/illi1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>---> 
+                  <a href="https://traductox.netlify.app/" title="More Details"> <button class="btn btn-danger">Visitez le site</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/luvsicosmetics.png" class="img-fluid" alt="" style="height: 36vh;">
+              <div class="portfolio-info">
+                <h4>luvsicosmetics</h4>
+                <p>luvsicosmetics</p>
+                <div class="portfolio-links">
+                 <!--- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>---> 
+                  <a href="https://luvsicosmetics.netlify.app" title="More Details"> <button class="btn btn-danger">Visitez le site</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/myevents.png" class="img-fluid" alt="" style="height: 36vh;">
+              <div class="portfolio-info">
+                <h4>myevents229</h4>
+                <p>myevents229</p>
+                <div class="portfolio-links">
+                  <!--- <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>---> 
+                  <a href="https://myevents229.netlify.app/" title="More Details"> <button class="btn btn-danger">Visitez le site</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/dyscom.png" class="img-fluid" alt="" style="height: 36vh;">
+              <div class="portfolio-info">
+                <h4>dyscom-negoce</h4>
+                <p>dyscom-negoce</p>
+                <div class="portfolio-links">
+                  <!--- <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>---> 
+                  <a href="https://dyscom-negoce.netlify.app" title="More Details"> <button class="btn btn-danger">Visitez le site</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/abc.png" class="img-fluid" alt="" style="height: 36vh;">
+              <div class="portfolio-info">
+                <h4>abcenter</h4>
+                <p>abcenter</p>
+                <div class="portfolio-links">
+                  <!--- <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>---> 
+                  <a href="https://abcenter.netlify.app" title="More Details"> <button class="btn btn-danger">Visitez le site</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/aziz.png" class="img-fluid" alt="" style="height: 36vh;">
+              <div class="portfolio-info">
+                <h4>azizdeen</h4>
+                <p>azizdeen</p>
+                <div class="portfolio-links">
+                  <!--- <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>---> 
+                  <a href="https://azizdeen.netlify.app" title="More Details"> <button class="btn btn-danger">Visitez le site</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials" style="display: none;">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>TÉMOIGNAGES</h2>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat esse veniam culpa fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing section-bg" style="display: none;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="fade-up" data-aos-delay="100">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box featured" data-aos="fade-up" data-aos-delay="200">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>QUESTIONS FRÉQUEMMENT POSÉES</h2>
+        </div>
+
+        <ul class="faq-list accordion" data-aos="fade-up">
+
+          <li>
+            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">Quels services de conception de sites web offrez-vous ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Nous offrons des services complets de conception web, y compris la création de maquettes, le développement front-end et back-end, l'intégration de systèmes, l'optimisation des performances, et plus encore.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">Quels types de sites web pouvez-vous créer ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Nous concevons des sites web de toutes sortes, y compris des sites vitrines, des sites e-commerce, des blogs, des portefeuilles artistiques, des sites institutionnels, et bien plus encore.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">Quelles technologies utilisez-vous pour la conception de sites web ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Nous maîtrisons les langages HTML, CSS, JavaScript, Firebase, PHP et Python ainsi que les frameworks comme React JS et CMS populaires tels que WordPress, Bootstrap, et plus encore.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">Comment fonctionne le processus de conception de site web avec votre équipe ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Notre processus de conception de site web comprend des étapes telles que la collecte des besoins, la création de maquettes, le développement, les tests et la mise en ligne. Nous collaborons étroitement avec nos clients tout au long du processus.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed">Quelle est la durée moyenne pour concevoir un site web ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                La durée varie en fonction de la complexité du projet. Nous évaluons chaque projet individuellement et fournissons des délais estimés à nos clients.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq6" class="collapsed">Proposez-vous des services de référencement (SEO) pour les sites web que vous concevez ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Oui, nous offrons des services de référencement pour aider les sites web à être bien positionnés sur les moteurs de recherche et à attirer davantage de visiteurs.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq7" class="collapsed">Pouvez-vous assurer la maintenance du site web après sa création ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq7" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Oui, nous proposons des services de maintenance pour assurer le bon fonctionnement continu du site web après sa création.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq8" class="collapsed">Comment puis-je demander un devis pour la conception de mon site web ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq8" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Vous pouvez nous contacter par le biais de notre formulaire de contact ou par e-mail pour nous présenter votre projet et obtenir un devis personnalisé.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Équipe</h2>
+        </div>
+
+        <div class="row">
+
+         <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/WhatsApp Image 2023-07-17 at 18.33.10.jpeg"
+                style="height: 50vh;"
+                class="img-fluid" alt="">
+                <!--<div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>-->
+             <!-- </div>
+              <div class="member-info">
+                <h4>SODINYESSI Sènou Gérard</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>-->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/team/WhatsApp Image 2023-07-17 at 18.34.39.jpeg"
+                style="height: 50vh;"
+                 class="img-fluid" alt="">
+                 <!--<div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>-->
+              </div>
+              <div class="member-info">
+                <h4>AHOGA Ulrich</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/WhatsApp Image 2023-07-17 at 18.34.40.jpeg" 
+                style=" height: 50vh;"
+                class="img-fluid" alt="">
+                 <!--<div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>-->
+              </div>
+              <div class="member-info">
+                <h4>CHRISTA Marielle</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/team/WhatsApp Image 2023-07-17 at 18.33.56.jpeg"
+                style="height: 50vh;"
+                 class="img-fluid" alt="">
+                 <!--<div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>-->
+              </div>
+              <div class="member-info">
+                <h4>FADEI Guillaume</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Notre adresse</h3>
+                  <p>Bénin Littoral Cotonou</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Nos Emails</h3>
+                  <p>becare.fr.ge@gmail.com <!--<br>developperfullstacksenou@gmail.com--></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Contactez-nous</h3>
+                  <p>+229 98 27 19 85</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/tabs-2.jpg" alt="" id="imgcontact"
+            style="height: 62vh;">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form" style="display: none !important;">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top" style="display: none;">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Presento<span>.</span></h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>BeCare</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">BeCare</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="https://wa.me/+22998271985?text=Salut BeCare,%20comment%20allez-vous%20?%20Vous%20êtes%20une entreprise constituée d'une équipe de designers talentueux qui créent des sites web.%20Je%20suis%20vraiment%20intéressé%20par%20vos%20services. J'aimerais en savoir plus sur vous et explorer les possibilités d'une connexion significative." class="instagram"><i class="bx bxl-whatsapp"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer https://web.facebook.com/profile.php?id=100090391924063 -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script>
+    function validerSaisie(input) {
+    const valeurSaisie = input.value;
+    const regexLettresAvecEspaces = /^\d+$/;
+
+    if (!regexLettresAvecEspaces.test(valeurSaisie)) {
+      //alert("ne fait pas ça")
+      // Effacez la saisie incorrecte
+      input.value = input.value.replace(/\D/g, '');
+     
+    } else {
+    }
+  }
+    //funcion to pay for kkiapay
+    var MyClasidpayer = document.getElementById('sendunityforuser');
+    var PRICE = document.getElementById('recipient-name');
+    var nom_du_site = document.getElementById('nom_du_site');
+    var type_du_site = document.getElementById('type_du_site');
+    MyClasidpayer.addEventListener('click', function () {  
+      var textdata = `J'ai effectué ce paiement dans le cadre de la mise en place de mon application ${type_du_site.value} ${nom_du_site.value} . `  
+       if(PRICE.value === "" || nom_du_site.value === "" || type_du_site.value === ""){
+        Swal.fire({
+                title: "Désolé",
+                text: "L'un des champs es vide",
+                icon: "info",
+                closeOnClickOutside: false,
+                });
+       }else{
+        console.log(textdata)
+        openKkiapayWidget({
+                amount: `${PRICE.value}`,
+                position: "center",
+                callback: "javascript:sendmycommandinCentremodale()",
+                data: `${textdata}`,
+                theme: "blue",
+                key: "deb48fc468f8e7fcc35aee7ae721254a3427f5e5",
+              });
+        }
+    })
+</script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.kkiapay.me/k.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
