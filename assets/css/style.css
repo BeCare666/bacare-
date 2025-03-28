@@ -6,6 +6,10 @@ body {
   color: #444444;
 }
 -----------------*/
+*{
+  font-family: "Josefin Sans Roman" !important;
+  font-size: 16px !important;
+}
 #myidpayer{
   display: none !important;
 }
