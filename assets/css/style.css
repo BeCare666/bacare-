@@ -443,12 +443,41 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/bgdev1.png") top center no-repeat;
+  background: url("../img/A.I-2.gif") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 82px;
 }
+.imgAnimation{
+  float: right !important;
+}
 
+.imgAnimCenter{
+  margin-left: 7% !important;
+}
+@media (max-width: 768px) {
+  .imgAnimation {
+    display: none;
+  }
+  .imgAnim {
+    max-width: 90%;
+    height: auto;
+  }
+  #section_Foranimation{
+    
+    height: 100vh !important;
+    
+  }
+} 
+
+#section_Foranimation{
+  width: 100%;
+  height: 150vh;
+  background: url("../img/team/animation.gif") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 82px;
+}
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
