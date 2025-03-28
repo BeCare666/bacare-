@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>BeCare</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/WhatsApp Image 2023-07-17 at 18.35.05.jpeg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.min.css">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><img src="assets/img/WhatsApp Image 2023-07-17 at 18.35.05.jpeg" 
+      style="width: 7vh; height: 10vh;"
+      alt=""> <a href="index.html">Be<span style="margin-left: 0 !important;">Car</span><span>e</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">À propos</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="nosrealisations.html">Nos Réalisations</a></li>
+          <li><a class="nav-link scrollto" href="Pricing.html">Prix</a></li>
+          <li><a class="nav-link scrollto" href="team.html">Équipe</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a style="cursor: pointer; color: white !important;" class="get-started-btn scrollto" id="myidpayer" data-toggle="modal" data-target="#exampleModal">Payer</a>
+    </div>
+  </header><!-- End Header -->
+  <div style="background-color: rgb(21, 20, 46) !important" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="background-color: rgb(47, 45, 104) !important">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="color: white !important;">Commande de site web</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label"  style="color: white !important;">Metter le prix</label>
+              <input type="text" class="form-control" id="recipient-name" oninput="validerSaisie(this)">
+              <label for="nom_du_site" class="col-form-label"  style="color: white !important;">Le nom du site ou de l'application</label>
+              <input type="text" class="form-control" id="nom_du_site">
+              <label for="nom_du_site" class="col-form-label"  style="color: white !important;">Le type du site</label>
+              <select type="text" class="form-control" id="type_du_site">
+                <option value="Web">Web</option>
+                <option value="Web">Web et mobile</option>
+                <option value="Web">Mobile</option>
+              </select>
+            </div>
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary" id="sendunityforuser"  data-dismiss="modal">Valider</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients" style="display: none !important;">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Vous rêvez de propulser votre entreprise sur le web ? Découvrez nos packs sur-mesure, conçus pour vous offrir une présence en ligne professionnelle, 
+            efficace et percutante, à des prix adaptés à tous les besoins !</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="fade-up" data-aos-delay="100">
+              <h3>Basique</h3>
+              <h4>57 000 <sup>FCFA</sup></h4>
+              <ul class="listepack">
+                <li>🌐 Développement d'un site web moderne et responsive pour vous démarquer</li>
+                <li>💻 Hébergement 1 an en .com ou .net pour une visibilité optimale</li>
+                <li>📧 2 emails professionnels pour renforcer votre image de marque</li>
+                <li>🎨 Logo personnalisé offert pour une identité unique</li>
+                <li>📱 Page Facebook offerte pour commencer à communiquer avec vos clients</li>
+              </ul>
+              <div class="btn-wrap">
+                <a class="btn-buy" id="57000" data-id="57000id" data-name="Basique" 
+                data-price="57000" data-info="💻Hébergement 1 an. 📧 2 emails professionnels. 🎨 Logo personnalisé offert et 📱 Page Facebook offerte.">
+                Achéter maintenant</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box featured" data-aos="fade-up" data-aos-delay="200">
+              <h3>Business Booster</h3>
+              <h4>100 000<sup> FCFA</sup> </h4>
+              <ul class="listepack">
+                <li>🌐 Développement d'un site web sur mesure avec des fonctionnalités avancées pour mieux répondre à vos besoins</li>
+                <li>💻 Hébergement pendant 2 ans en .com ou .net pour une stabilité sur le long terme</li>
+                <li>📧 8 emails professionnels pour une communication fluide et professionnelle</li>
+                <li>🎨 Logo design offert pour marquer les esprits</li>
+                <li>📱 Page Facebook offerte + création d'une page Instagram offerte pour doubler votre visibilité</li>
+              </ul>
+              <div class="btn-wrap">
+                <a class="btn-buy" data-id="100000id" data-name="Business Booster" 
+                data-price="100000" data-info="💻Hébergement 2 an. 📧 8 emails professionnels. 🎨 Logo personnalisé offert et 📱 Page Facebook offerte + Instagram.">
+                Achéter maintenant</a>
+            </div>
+          </div>
+          </div>
+       
+      
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+              <h3>Édition Premium</h3>
+              <h4>130 000<sup> FCFA</sup></h4>
+              <ul class="listepack">
+                <li>🌐 Développement d'un site internet multilingue pour toucher un public international</li>
+                <li>💻 Hébergement pendant 2 ans en .com ou .net + serveurs sécurisés pour une performance optimale</li>
+                <li>📧 15 emails professionnels pour gérer toutes vos communications sans limite</li>
+                <li>🎨 Logo unique et sur mesure pour un branding mémorable</li>
+                <li>📱 Page Facebook + Instagram offertes pour renforcer votre présence sociale</li>
+                <li>🔒 Back office complet pour une gestion simple et autonome de votre site</li>
+                <li>🚀 Support technique premium inclus pendant 6 mois pour garantir votre tranquillité d’esprit</li>
+              </ul>
+              <div class="btn-wrap">
+                <a class="btn-buy" data-id="130000id" data-name="Édition Premium" 
+                data-price="130000" data-info="💻Hébergement 2 an. 📧 15 emails professionnels. 🎨 Logo personnalisé offert et 📱 Page Facebook offerte + Instagram. 🔒 Back office complet et 🚀 Support technique premium inclus.">
+                Achéter maintenant</a>
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Notre adresse</h3>
+                  <p>Bénin Littoral Cotonou</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Nos Emails</h3>
+                  <p>becare.fr.ge@gmail.com <!--<br>developperfullstacksenou@gmail.com--></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Contactez-nous</h3>
+                  <p>+229 98 27 19 85</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/tabs-2.jpg" alt="" id="imgcontact"
+            style="height: 62vh;">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form" style="display: none !important;">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top" style="display: none;">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Presento<span>.</span></h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>BeCare</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">BeCare</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="https://wa.me/+22998271985?text=Salut BeCare,%20comment%20allez-vous%20?%20Vous%20êtes%20une entreprise constituée d'une équipe de designers talentueux qui créent des sites web.%20Je%20suis%20vraiment%20intéressé%20par%20vos%20services. J'aimerais en savoir plus sur vous et explorer les possibilités d'une connexion significative." class="instagram"><i class="bx bxl-whatsapp"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer https://web.facebook.com/profile.php?id=100090391924063 -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script>
+    function validerSaisie(input) {
+    const valeurSaisie = input.value;
+    const regexLettresAvecEspaces = /^\d+$/;
+
+    if (!regexLettresAvecEspaces.test(valeurSaisie)) {
+      //alert("ne fait pas ça")
+      // Effacez la saisie incorrecte
+      input.value = input.value.replace(/\D/g, '');
+     
+    } else {
+    }
+  }
+    //funcion to pay for kkiapay
+    var MyClasidpayer = document.getElementById('sendunityforuser');
+    var PRICE = document.getElementById('recipient-name');
+    var nom_du_site = document.getElementById('nom_du_site');
+    var type_du_site = document.getElementById('type_du_site');
+    MyClasidpayer.addEventListener('click', function () {  
+      var textdata = `J'ai effectué ce paiement dans le cadre de la mise en place de mon application ${type_du_site.value} ${nom_du_site.value} . `  
+       if(PRICE.value === "" || nom_du_site.value === "" || type_du_site.value === ""){
+        Swal.fire({
+                title: "Désolé",
+                text: "L'un des champs es vide",
+                icon: "info",
+                closeOnClickOutside: false,
+                });
+       }else{
+        console.log(textdata)
+        openKkiapayWidget({
+                amount: `${PRICE.value}`,
+                position: "center",
+                callback: "javascript:sendmycommandinCentremodale()",
+                data: `${textdata}`,
+                theme: "blue",
+                key: "deb48fc468f8e7fcc35aee7ae721254a3427f5e5",
+              });
+        }
+    })
+</script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.kkiapay.me/k.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/feexpay.js"></script>
+
+</body>
+
+</html>
