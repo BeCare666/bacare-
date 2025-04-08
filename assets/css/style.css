@@ -181,7 +181,7 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: 600;
-  color: #111111;
+  color: white;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -222,6 +222,7 @@ h6 {
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
+  color: #111111;
 }
 
 .navbar .dropdown ul a i {
@@ -441,8 +442,9 @@ h6 {
     font-size: 18px;
     line-height: 24px;
   }
+  
 }
-
+ 
 @media (max-height: 500px) {
   #heroa {
     height: 120vh;

@@ -24,7 +24,7 @@ btn_buy.forEach((btn)=>{
                 alert('Paiement réussi !');  // Appelez une fonction après le paiement (personnalisée ici)
             },
             callback_url: "your_callback_url",  // Facultatif : URL de callback si vous en avez une
-            mode: 'SANDBOX',  // Utilisez 'LIVE' pour un environnement de production
+            mode: 'LIVE',  // Utilisez 'LIVE' pour un environnement de production
             custom_button: false,  // Si vous souhaitez un bouton personnalisé
             id_custom_button: 'my-custom-button-id',  // Si vous avez un bouton personnalisé, utilisez cet ID
             custom_id: 'random_string_for_reference',  // Facultatif : pour faire référence à cette transaction
