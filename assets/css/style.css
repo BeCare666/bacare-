@@ -463,8 +463,16 @@ h6 {
   float: right !important;
 }
 
+@media screen and (max-width: 768px) {
+  #hero .container .row {
+    /**margin-top: 100px;**/ 
+  }
+}
 .imgAnimCenter{
   margin-left: 7% !important;
+}
+#header .me-auto img {
+  border-radius: 100% !important;
 }
 @media (max-width: 768px) {
   .imgAnimation {
@@ -478,6 +486,16 @@ h6 {
     
     height: 100vh !important;
     
+  }
+  .img2x img {
+    max-width: 110% !important;
+  }
+  .img1x img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  #hero{
+    height: 150vh;
   }
 } 
 
