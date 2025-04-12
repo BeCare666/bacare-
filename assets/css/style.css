@@ -495,9 +495,60 @@ h6 {
     height: auto !important;
   }
   #hero{
-    height: 115vh;
+    height: 155vh;
+  }
+  #infoContactId{
+    
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+    top: 77px;
+    z-index: 9999;
+    right: 0 !important; 
+    border-radius: 5px 0 0 5px;
+  }
+  #MySpanContactId{
+    display: block !important;
+    font-size: 26px !important;
+  }
+  #MySpanContactId i{
+    font-size: 20px !important;
+    margin-right: 19px !important;
   }
 } 
+#MySpanContactId{
+  display: none;
+}
+#infoContactId{
+  display: none;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 65px;
+  right: 7px;
+  background-color: #25d366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px; /* Centre verticalement l’icône */
+  z-index: 999;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+}
+
+.whatsapp-float i {
+  vertical-align: middle;
+}
+
+
 
 #section_Foranimation{
   width: 100%;
