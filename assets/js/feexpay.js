@@ -48,18 +48,3 @@ btn_buy.forEach((btn)=>{
         }, 500)
     })
 });
-
-{/*        fetch('/add-to-cart', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        })
-        .then(response => response.json())
-        .then(data => {
-            if(data.status == 'success'){
-                var cart_count = document.querySelector('.cart-count');
-                cart_count.innerHTML = data.cart_count;
-            }
-})*/}

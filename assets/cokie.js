@@ -10,7 +10,6 @@ if(!cookiesIsClicked){
 }
 
  
-
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       cookieBox.classList.remove("show");
